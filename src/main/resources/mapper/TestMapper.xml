@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.doongzzi.web.dao.TestMapper">
+	<resultMap type="com.doongzzi.web.model.TestModel" id="testResultMap">
+			
+	</resultMap>
+	
+	<insert id="testInsert" parameterType="com.doongzzi.web.model.TestModel">
+		INSERT INTO TEST_TABLE 
+			(CWL_SEQ,
+			CWL_ID,
+			CWL_CONTENT,
+			CWL_DATE) 
+		VALUES 
+			((SELECT COUNT(*) FROM TEST_TABLE),
+			#{testId},
+			#{testContent}, 
+		     SYSDATE) 
+	</insert>
+</mapper>

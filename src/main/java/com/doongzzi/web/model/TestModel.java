@@ -1,20 +1,33 @@
 package com.doongzzi.web.model;
 
 public class TestModel {
-	private String test1;
-	private String test2;
+	private int testSeq;
+	private String testId;
+	private String testContent;
 	
-	public String getTest1() {
-		return test1;
+	public TestModel(String testId, String testContent) {
+		this.testId = testId;
+		this.testContent = testContent;
 	}
-	public void setTest1(String test1) {
-		this.test1 = test1;
+	
+	public int getTestSeq() {
+		return testSeq;
 	}
-	public String getTest2() {
-		return test2;
+	public void setTestSeq(int testSeq) {
+		this.testSeq = testSeq;
 	}
-	public void setTest2(String test2) {
-		this.test2 = test2;
+	public String getTestId() {
+		return testId;
 	}
+	public void setTestId(String testId) {
+		this.testId = testId;
+	}
+	public String getTestContent() {
+		return testContent;
+	}
+	public void setTestContent(String testContent) {
+		this.testContent = testContent;
+	}
+	
 	
 }

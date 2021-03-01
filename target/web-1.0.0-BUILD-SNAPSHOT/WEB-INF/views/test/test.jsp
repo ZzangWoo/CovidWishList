@@ -17,8 +17,8 @@
 		$(document).ready(function() {
 		    $("#testButton").click(function() {
 		    	var data = {
-		    			"UserId" : $("#testText1").val(),
-		    			"UserPw" : $("#testText2").val()
+		    			"test1" : $("#testText1").val(),
+		    			"test2" : $("#testText2").val()
 		    	};
 		    	
 		    	$.ajax({
