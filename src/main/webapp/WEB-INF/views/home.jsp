@@ -12,6 +12,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="resources/assets/css/main.css" />
+		<link rel="stylesheet" href="resources/assets/css/bootstrap.min.css" />
 		<noscript><link rel="stylesheet" href="resources/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -55,9 +56,20 @@
 							<header>
 								<h2>코로나가 끝나면 하고싶은 일들을 적어보세요.</h2>
 							</header>
+							<!-- 슬라이드 시작 -->
+							<div class="col-12"><span class="image fit"><img src="resources/images/pic13.jpg" alt="" /></span></div>
+							<!-- 슬라이드 끝 -->
 							<section class="tiles">
 								<article class="style1">
-									<h2>테스트</h2>
+									<span class="image">
+										<img src="resources/images/pic01.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Lorem</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
 								</article>
 								<article class="style2">
 									<span class="image">
@@ -229,6 +241,8 @@
 
 		<!-- Scripts -->
 			<script src="resources/assets/js/jquery.min.js"></script>
+			<script src="resources/assets/js/bootstrap.min.js"></script>
+			<script src="resources/assets/js/popper.min.js"></script>
 			<script src="resources/assets/js/browser.min.js"></script>
 			<script src="resources/assets/js/breakpoints.min.js"></script>
 			<script src="resources/assets/js/util.js"></script>
